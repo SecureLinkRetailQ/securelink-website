@@ -566,6 +566,12 @@ h3 {
   font-size: 0.92rem;
 }
 
+.retailq-showcase p {
+  margin: 8px 4px 2px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .retailq-support-section,
 .retailq-problems,
 .retailq-features,
