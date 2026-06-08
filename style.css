@@ -485,6 +485,35 @@ h3 {
   top: 8px;
 }
 
+.retailq-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.retailq-feature-grid article {
+  padding: 18px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+}
+
+.retailq-feature-grid article:last-child {
+  grid-column: 1 / -1;
+}
+
+.retailq-feature-grid h3 {
+  color: var(--ink);
+}
+
+.retailq-feature-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .retailq-showcase {
   max-width: 760px;
   width: 100%;
@@ -509,6 +538,82 @@ h3 {
   margin: 12px 4px 2px;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.retailq-support-section,
+.retail-environments,
+.roadmap-section {
+  border-top: 1px solid var(--line);
+}
+
+.problem-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.problem-solution-grid > div {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(7, 19, 31, 0.07);
+}
+
+.problem-solution-grid ul {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.problem-solution-grid li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--muted);
+}
+
+.problem-solution-grid li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 14px;
+  height: 2px;
+  background: var(--blue);
+}
+
+.environment-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.environment-list span {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  color: #26374a;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 26px rgba(7, 19, 31, 0.06);
+  font-weight: 800;
+}
+
+.roadmap-section {
+  padding-top: 58px;
+}
+
+.roadmap-section .section-heading {
+  max-width: 940px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(7, 19, 31, 0.07);
 }
 
 .trust-grid,
@@ -748,6 +853,7 @@ textarea:focus {
 
   .trust-strip,
   .service-list,
+  .environment-list,
   .trust-grid,
   .use-case-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -781,6 +887,9 @@ textarea:focus {
   .two-column,
   .trust-strip,
   .service-list,
+  .retailq-feature-grid,
+  .problem-solution-grid,
+  .environment-list,
   .capability-list,
   .trust-grid,
   .use-case-grid {

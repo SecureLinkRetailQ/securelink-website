@@ -96,7 +96,7 @@ Replace the placeholder text with your real phone number.
 
 ### Edit RetailQ wording
 
-RetailQ wording is in `index.html`.
+RetailQ is now a flagship section on the homepage. RetailQ wording is in `index.html`.
 
 Search for:
 
@@ -169,9 +169,12 @@ Most homepage content is in `index.html`.
 
 Useful search terms:
 
+- `RetailQ — retail monitoring and compliance visibility`
+- `Why RetailQ?`
+- `Built for food retail environments`
+- `RetailQ roadmap`
 - `CCTV Services`
-- `Advanced CCTV & Facial Recognition`
-- `RetailQ`
+- `Advanced CCTV options`
 - `Trust & Credibility`
 - `Contact SecureLink LTD`
 
