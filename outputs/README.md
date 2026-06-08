@@ -7,8 +7,8 @@ This is a simple static website for **SecureLink LTD**. It uses only HTML, CSS a
 - `index.html` - the website content and page structure
 - `style.css` - the design, layout and mobile responsive styles
 - `script.js` - the mobile menu and enquiry form email behaviour
-- `assets/securelink-logo.png` - SecureLink LTD logo used in the header, footer and favicon
-- `assets/retailq-dashboard.png` - RetailQ dashboard screenshot used in the RetailQ section
+- `securelink-logo.png` - SecureLink LTD logo used in the header, footer and favicon
+- `retailq-dashboard.png` - RetailQ dashboard screenshot used in the RetailQ section
 - `privacy-policy.html` - privacy policy page
 - `terms-and-conditions.html` - terms and conditions page
 - `README.md` - these instructions
@@ -111,13 +111,13 @@ Edit that section if the RetailQ service changes. Keep the wording accurate and 
 The current logo file is:
 
 ```text
-assets/securelink-logo.png
+securelink-logo.png
 ```
 
 To replace it later:
 
 1. Prepare the new logo as a `.png`, `.jpg`, `.webp` or `.svg`.
-2. Put it in the `assets` folder.
+2. Put it in the same folder as `index.html`.
 3. Either name it `securelink-logo.png` to replace the current file, or update the image path in `index.html`, `privacy-policy.html` and `terms-and-conditions.html`.
 
 The logo is used in:
@@ -131,34 +131,34 @@ The logo is used in:
 The RetailQ screenshot is:
 
 ```text
-assets/retailq-dashboard.png
+retailq-dashboard.png
 ```
 
 To replace it later, add the new screenshot to the `assets` folder and either use the same filename or update this line in `index.html`:
 
 ```html
-<img src="assets/retailq-dashboard.png" alt="RetailQ dashboard showing fridge temperatures, alerts and site status">
+<img src="retailq-dashboard.png" alt="RetailQ dashboard showing fridge temperatures, alerts and site status">
 ```
 
 ### Add future images
 
-Put future images in:
+Put future images in the same folder as `index.html`:
 
 ```text
-assets/
+retail-shop-cctv.jpg
 ```
 
 Examples:
 
-- `assets/cctv-installation.jpg`
-- `assets/retail-shop-cctv.jpg`
-- `assets/warehouse-cctv.jpg`
-- `assets/team-photo.jpg`
+- `cctv-installation.jpg`
+- `retail-shop-cctv.jpg`
+- `warehouse-cctv.jpg`
+- `team-photo.jpg`
 
 Then reference them in `index.html` using:
 
 ```html
-<img src="assets/cctv-installation.jpg" alt="SecureLink LTD CCTV installation">
+<img src="cctv-installation.jpg" alt="SecureLink LTD CCTV installation">
 ```
 
 Use clear filenames and always add useful `alt` text.
@@ -196,7 +196,8 @@ Upload these files into `public_html`:
 - `script.js`
 - `privacy-policy.html`
 - `terms-and-conditions.html`
-- the full `assets` folder
+- `securelink-logo.png`
+- `retailq-dashboard.png`
 
 You can also upload `README.md`, but it is not required for the public website.
 
@@ -210,8 +211,8 @@ public_html/style.css
 public_html/script.js
 public_html/privacy-policy.html
 public_html/terms-and-conditions.html
-public_html/assets/securelink-logo.png
-public_html/assets/retailq-dashboard.png
+public_html/securelink-logo.png
+public_html/retailq-dashboard.png
 ```
 
 Wrong:
@@ -226,7 +227,7 @@ public_html/securelink-website/script.js
 
 On your Mac:
 
-1. Select `index.html`, `style.css`, `script.js`, `privacy-policy.html`, `terms-and-conditions.html`, the `assets` folder and optionally `README.md`.
+1. Select `index.html`, `style.css`, `script.js`, `privacy-policy.html`, `terms-and-conditions.html`, `securelink-logo.png`, `retailq-dashboard.png` and optionally `README.md`.
 2. Right-click the selected files.
 3. Choose **Compress**.
 4. A `.zip` file will be created.
