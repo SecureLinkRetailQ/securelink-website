@@ -31,7 +31,6 @@ enquiryForm.addEventListener("submit", (event) => {
     `Name: ${formData.get("name")}`,
     `Company: ${formData.get("company") || "Not provided"}`,
     `Email: ${formData.get("email")}`,
-    `Phone: ${formData.get("phone") || "Not provided"}`,
     `Service required: ${formData.get("service")}`,
     "",
     "Message:",

@@ -34,7 +34,7 @@ If you edit the website and do not see your changes, refresh the browser:
 - Chrome: press `Command + R`
 - Hard refresh in Chrome: press `Command + Shift + R`
 
-## 3. How to edit text, email, phone number, logo and images
+## 3. How to edit text, email, logo and images
 
 Open the files in a text editor such as TextEdit, VS Code, Sublime Text or any code editor.
 
@@ -45,7 +45,7 @@ Most website wording is inside `index.html`.
 Look for comments like:
 
 ```html
-<!-- EDIT: Replace the placeholder phone and address below. -->
+<!-- EDIT: Company details are official registration details. -->
 ```
 
 These comments show the safest places to change content.
@@ -83,16 +83,6 @@ www.securelinkltd.co.uk
 ```
 
 Search for `Company No. 16666747` or `Registered office` in `index.html` to update these details if they ever change.
-
-### Edit phone number
-
-In `index.html`, find:
-
-```html
-Phone: <span>EDIT PHONE NUMBER</span>
-```
-
-Replace the placeholder text with your real phone number.
 
 ### Edit RetailQ wording
 
